@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Express Lab</title>
+</head>
+<body>
+  <h1>Sudents</h1>
+  <ul>
+    <% students.forEach(student => { %>
+      <li>
+      <%= student.name %>
+      - 
+      <%= student.passed ? 'Have fun being a senior next year': "I'll see you next year in the 11th grade" %>
+      </li> 
+    <% }) %>
+  </ul>
+</body>
+</html>
