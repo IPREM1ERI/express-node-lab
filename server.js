@@ -1,5 +1,5 @@
 import express from 'express';
-import { students } from './data/student-data';
+import { students } from './data/student-data.js';
 
 //create express app
 const app = express()
@@ -12,7 +12,7 @@ app.get('/', function (req,res) {
 })
 
 app.get('/home', function(req,res) {
-  res.send('<h1>This is the homepage</h1>')
+  res.render('home')
 })
 
 //tell the app to listen on port 3000
