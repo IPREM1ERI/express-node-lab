@@ -4,7 +4,7 @@ import { students } from './data/student-data.js';
 //create express app
 const app = express()
 // configuer the app(app.set)
-
+app.set('view engine','ejs')
 
 //mount routes
 app.get('/', function (req,res) {
